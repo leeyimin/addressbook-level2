@@ -3,6 +3,7 @@ package seedu.addressbook.parser;
 import org.junit.Before;
 import org.junit.Test;
 import seedu.addressbook.commands.*;
+import seedu.addressbook.data.address.Address;
 import seedu.addressbook.data.exception.IllegalValueException;
 import seedu.addressbook.data.tag.Tag;
 import seedu.addressbook.data.tag.UniqueTagList;
