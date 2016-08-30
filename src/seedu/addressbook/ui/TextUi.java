@@ -106,7 +106,7 @@ public class TextUi {
         if(resultPersons.isPresent()) {
             showPersonListView(resultPersons.get());
         }
-        showToUser(Formatter.getResultMessageArray(result.feedbackToUser));
+        showToUser(Formatter.getResultMessageArray(result.getFeedbackToUser()));
     }
 
     /**
