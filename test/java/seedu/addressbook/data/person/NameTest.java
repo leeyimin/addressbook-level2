@@ -16,6 +16,9 @@ public class NameTest {
 			assertTrue(name.isSimilar(new Name("John K Smith")));
 			assertTrue(name.isSimilar(new Name("john k smith")));
 			assertTrue(name.isSimilar(new Name("k smith")));
+			assertFalse(name.isSimilar(new Name("Putin pudding")));
+			assertFalse(name.isSimilar(new Name("smith brown")));
+			assertFalse(name.isSimilar(null));
 		} catch (IllegalValueException e) {
 			e.printStackTrace();
 		}
