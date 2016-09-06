@@ -68,6 +68,9 @@ public class Name {
      * Two names are considered similar if they contain 2 or more equal (case-insensitive) tokens
      */
 	public boolean isSimilar(Name other) {
+		if(other == null){
+			return false;
+		}
 		Set<String> tokens = new HashSet<>();
 		tokens.addAll(Arrays.asList(fullName.toUpperCase().split(" ")));
 		Set<String> matches = new HashSet<>();
