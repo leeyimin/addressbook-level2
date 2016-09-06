@@ -22,6 +22,8 @@ public class NameTest {
 			
 			name = new Name("Johnson Johnson");
 			assertTrue(name.isSimilar(new Name("Johnson Johnson")));
+			name = new Name("John Smith");
+			assertTrue(name.isSimilar(new Name("John")));
 		} catch (IllegalValueException e) {
 			e.printStackTrace();
 		}
