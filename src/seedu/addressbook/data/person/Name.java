@@ -65,7 +65,7 @@ public class Name {
 
     /**
      * Returns true of the other name is very similar to this name.
-     * Two names are considered similar if they contain 2 or more equal (case-insensitive) tokens
+     * Two names are considered similar if they contain 50% or more of the same (case-insensitive) tokens
      */
 	public boolean isSimilar(Name other) {
 		if(other == null){
@@ -79,7 +79,7 @@ public class Name {
 				matches.add(token);
 			}
 		}
-		return matches.size()>1;
+		return (double)matches.size()/tokens.size() >= 0.5;
 	}
 
 }
