@@ -13,7 +13,7 @@ public class NameTest {
 	public void testIsSimilar() {
 		try {
 			Name name = new Name("John K Smith");
-			assertTrue(name.isSimilar("John K Smith"));
+			assertTrue(name.isSimilar(new Name("John K Smith")));
 		} catch (IllegalValueException e) {
 			e.printStackTrace();
 		}

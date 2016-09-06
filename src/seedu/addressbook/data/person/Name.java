@@ -61,4 +61,12 @@ public class Name {
         return fullName.hashCode();
     }
 
+    /**
+     * Returns true of the other name is very similar to this name.
+     * Two names are considered similar if they are the equal (case-insensitive)
+     */
+	public boolean isSimilar(Name other) {
+		return fullName.equalsIgnoreCase(other.fullName);
+	}
+
 }
